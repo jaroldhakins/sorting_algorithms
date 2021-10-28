@@ -14,7 +14,7 @@ void insertion_sort_list(listint_t **list)
 	if  (aux_t == NULL)
 		return;
 	aux_t = aux_t->next;
-	while (aux2 != NULL)
+	while (aux_t != NULL)
 	{
 		i = aux_t;
 		aux2 = aux_t->next;
