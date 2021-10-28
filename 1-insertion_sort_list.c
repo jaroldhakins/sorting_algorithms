@@ -8,16 +8,16 @@
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *aux;
-	listint_t *aux2 = *list;
+	listint_t *aux_t = *list;
 	listint_t *i = *list;
 
-	if  (aux2 == NULL)
+	if  (aux_t == NULL)
 		return;
-	aux2 = aux2->next;
+	aux_t = aux_t->next;
 	while (aux2 != NULL)
 	{
-		i = aux2;
-		aux2 = aux2->next;
+		i = aux_t;
+		aux2 = aux_t->next;
 		while (i->prev != NULL && i->n < i->prev->n)
 		{
 			if (i->next != NULL)
