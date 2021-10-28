@@ -24,5 +24,8 @@ void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
+int midle(int *array, int start, int end, size_t size);
+void recursion(int *array, int start, int end, size_t size);
 
 #endif
